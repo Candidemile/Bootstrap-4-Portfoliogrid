@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS LINKS -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+
+<!-- SCRIPTS -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  // Get the current year for the copyright
+  $('#year').text(new Date().getFullYear());
+
+  // Init Scrollspy
+  $('body').scrollspy({ target: '#main-nav' })
+
+  // Add scmooth scrolling
+  $('#main-nav a').on('click', function (e) {
+    // Check for hash value
+    if (this.hash !== '') {
+      // prevent default
+      e.preventDefault();
+
+      // Store hash in a variable
+      const hash = this.hash;
+
+      // Animate smooth scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 105
+      }, 800, function () {
+        // Add hash to URL after scroll
+        // window.location.hash = hash;
+        history.replaceState(null, null, hash);
+      })
+    }
+  })
+</script>
+</body>
+
+</html>
