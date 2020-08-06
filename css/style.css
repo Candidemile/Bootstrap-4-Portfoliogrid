@@ -14,6 +14,11 @@
   cursor: pointer;
 }
 
+#home .slick-slide {
+  height: 280px;
+  border-right: 5px solid black;
+}
+
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
