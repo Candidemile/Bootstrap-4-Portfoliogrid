@@ -15,10 +15,19 @@
 }
 
 #home .slick-slide {
-  height: 280px;
+  height: 220px;
   border-right: 5px solid black;
 }
 
+@media (max-width: 992px) {
+  #home .slick-slide {
+    border-right: none;
+  }
+  #home .slick-slide img {
+    margin: auto;
+    width: 80%;
+  }
+}
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important;
