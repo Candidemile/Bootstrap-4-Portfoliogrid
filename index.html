@@ -261,11 +261,32 @@
     <!-- WORK -->
     <div id="work" class="collapse">
       <div class="card card-body bg-warning text-white py-5">
-        <h2 class="text-dark">My Projects from GitHub</h2>
+        <h2 class="text-dark">My Projects on GitHub</h2>
       </div>
 
       <div class="card card-body py-4">
         <h3>What I Have Built..</h3>
+
+        <!-- Template of Card about Project -->
+        <template id="card-template">
+          <div class="col my-3">
+            <div class="card text-white bg-secondary border-dark shadow">
+              <h3 class="card-header text-center text-dark bg-warning name">Header
+                <a href="#"><i class="fab fa-github text-dark"></i></a>
+                <a href="#"><i class="fas fa-link text-dark"></i></a>
+                </h4>
+                <div class="card-body">
+                  <!-- <h3 class="card-title">Card title </h3> -->
+                  <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
+                    to
+                    additional
+                    content. This content is a little bit longer.</p>
+                </div>
+            </div>
+          </div>
+        </template>
+
+        <!-- Grid of Cards -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
           <div class="col my-3">
