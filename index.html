@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio</title>
   <!-- CSS LINKS -->
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -287,98 +287,23 @@
         </template>
 
         <!-- Grid of Cards -->
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div id="card-grid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
-          <div class="col my-3">
+          <!-- <div class="col my-3">
             <div class="card text-white bg-secondary border-dark shadow">
               <h3 class="card-header text-center text-dark bg-warning name">Header
                 <a href="#"><i class="fab fa-github text-dark"></i></a>
                 <a href="#"><i class="fas fa-link text-dark"></i></a>
                 </h4>
                 <div class="card-body">
-                  <!-- <h3 class="card-title">Card title </h3> -->
+                  <h3 class="card-title">Card title </h3>
                   <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
                     to
                     additional
                     content. This content is a little bit longer.</p>
                 </div>
             </div>
-          </div>
-          <div class="col my-3">
-            <div class="card text-white bg-secondary border-dark shadow">
-              <h3 class="card-header text-center text-dark bg-warning name">Header
-                <a href="#"><i class="fab fa-github text-dark"></i></a>
-                <a href="#"><i class="fas fa-link text-dark"></i></a>
-                </h4>
-                <div class="card-body">
-                  <!-- <h3 class="card-title">Card title </h3> -->
-                  <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
-                    to
-                    additional
-                    content. This content is a little bit longer.</p>
-                </div>
-            </div>
-          </div>
-          <div class="col my-3">
-            <div class="card text-white bg-secondary border-dark shadow">
-              <h3 class="card-header text-center text-dark bg-warning name">Header
-                <a href="#"><i class="fab fa-github text-dark"></i></a>
-                <a href="#"><i class="fas fa-link text-dark"></i></a>
-                </h4>
-                <div class="card-body">
-                  <!-- <h3 class="card-title">Card title </h3> -->
-                  <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
-                    to
-                    additional
-                    content. This content is a little bit longer.</p>
-                </div>
-            </div>
-          </div>
-          <div class="col my-3">
-            <div class="card text-white bg-secondary border-dark shadow">
-              <h3 class="card-header text-center text-dark bg-warning name">Header
-                <a href="#"><i class="fab fa-github text-dark"></i></a>
-                <a href="#"><i class="fas fa-link text-dark"></i></a>
-                </h4>
-                <div class="card-body">
-                  <!-- <h3 class="card-title">Card title </h3> -->
-                  <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
-                    to
-                    additional
-                    content. This content is a little bit longer.</p>
-                </div>
-            </div>
-          </div>
-          <div class="col my-3">
-            <div class="card text-white bg-secondary border-dark shadow">
-              <h3 class="card-header text-center text-dark bg-warning name">Header
-                <a href="#"><i class="fab fa-github text-dark"></i></a>
-                <a href="#"><i class="fas fa-link text-dark"></i></a>
-                </h4>
-                <div class="card-body">
-                  <!-- <h3 class="card-title">Card title </h3> -->
-                  <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
-                    to
-                    additional
-                    content. This content is a little bit longer.</p>
-                </div>
-            </div>
-          </div>
-          <div class="col my-3">
-            <div class="card text-white bg-secondary border-dark shadow">
-              <h3 class="card-header text-center text-dark bg-warning name">Header
-                <a href="#"><i class="fab fa-github text-dark"></i></a>
-                <a href="#"><i class="fas fa-link text-dark"></i></a>
-                </h4>
-                <div class="card-body">
-                  <!-- <h3 class="card-title">Card title </h3> -->
-                  <p class="card-text description">This is a longer card with supporting text below as a natural lead-in
-                    to
-                    additional
-                    content. This content is a little bit longer.</p>
-                </div>
-            </div>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -455,6 +380,7 @@
   <script src="js/ekko-lightbox.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/displayRepos.js"></script>
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
@@ -504,8 +430,6 @@
     setInterval(() => {
       AOS.refresh();
     }, 100)
-
-
 
   </script>
 </body>
