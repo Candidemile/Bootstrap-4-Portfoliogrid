@@ -37,6 +37,14 @@
 }
 
 @media (max-width: 992px) {
+	#main-panel {
+
+		.name,
+		.role {
+			padding: 1rem !important;
+		}
+	}
+
 	#home {
 		.slick-slide {
 			border-right: none;
@@ -51,7 +59,28 @@
 			height: 150px;
 		}
 	}
+
+
 }
+
+@media (orientation: landscape)and (min-width: 992px) and (max-width: 1199px) {
+	#main-panel {
+
+		.name,
+		.role {
+			padding: 2rem !important;
+		}
+	}
+
+	#main-header {
+		.port-item {
+			padding: 2rem !important;
+		}
+	}
+}
+
+
+
 
 @media (min-width: 1199px) {
 	.port-item {

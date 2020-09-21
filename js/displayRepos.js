@@ -23,7 +23,7 @@ function display(array) {
     card.querySelector('.name').textContent = repo.name;
     card.querySelector('.description').textContent = repo.description;
     let test;
-    console.log(repo.clone_url);
+    // console.log(repo.clone_url);
     // set homepage link for repo
     repo.homepage ? card.querySelector('.fa-link').parentElement.href = repo.homepage : card.querySelector('.fa-link').remove();
     // set git link for repo
@@ -35,6 +35,6 @@ function display(array) {
 // ** MAIN **
 // Fetch array of repos form GitHub and feed it into render function
 repos().then(res => {
-  console.log(res);
+  // console.log(res);
   display(res)
 });
